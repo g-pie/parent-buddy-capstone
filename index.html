@@ -142,12 +142,21 @@ input {
 
 <div id="tips">
   <h2 style="margin:15px"> Stress relief resources:</h2>
+  <ul id="tips_ul">
+    <li onclick="location.href='https://www.appliedimaging.com/blog-business-tips/time-management-working-from-home-with-kids/'">How to manage time</li>
+    <li onclick="location.href='https://blog.vantagecircle.com/work-from-home-tips/'">Tips on Working from Home</li>
+    <li onclick="location.href='https://tomato-timer.com/'">TomatoTimer (Pomodoro Timer)</li>
+    <li onclick="location.href='https://www.youtube.com/channel/UCG-KntY7aVnIGXYEBQvmBAQ'">Thomas Frank's Youtube Channel (useful productivity content)</li>
+  </ul>
 </div>
 <script>
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
+console.log("hello world");
+console.log(myNodelist[0].parentElement.id);
 for (i = 0; i < myNodelist.length; i++) {
+  if(myNodelist[i].parentElement.id == "tips_ul") continue;
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
