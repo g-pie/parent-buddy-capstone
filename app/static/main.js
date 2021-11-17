@@ -53,3 +53,32 @@ function newElement() {
     }
   }
 }
+
+// Double click to change text
+document.querySelectorAll("ul li").forEach(function(node){
+	node.ondblclick=function(){
+    // Slice off the close button from the task text
+		var val=this.innerText.slice(0, -1);
+    // Create input box to edit text
+		var input=document.createElement("input");
+		input.value=val;
+		input.onblur=function(){
+			var val=this.value;
+      var newTask=this.parentNode;
+			newTask.innerText=val;
+      // Append a close button to the task again
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.appendChild(txt);
+      span.className = "close";
+      span.onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+      newTask.appendChild(span);     
+		}
+		this.innerText="";
+		this.appendChild(input);
+		input.focus();
+	}    
+});
