@@ -7,6 +7,9 @@ body {
 * {
   box-sizing: border-box;
 }
+header{
+  background-color: cadetblue;
+}
 
 /* Remove margins and padding from the list */
 ul {
@@ -117,4 +120,8 @@ input {
 
 .addBtn:hover {
   background-color: #bbb;
+}
+#daily-quote{
+  font-family: cursive;
+  background-color: bisque;
 }

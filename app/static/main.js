@@ -1,11 +1,22 @@
 // Create a "close" button and append it to each list item
-
 function comparator(a, b) {
   if (parseInt(a.dataset.priority, 10) < parseInt(b.dataset.priority,10))
       return -1;
   if (parseInt(a.dataset.priority,10) > parseInt(b.dataset.priority,10))
       return 1;
   return 0;
+}
+importQuotes();
+function importQuotes(){
+  console.log("hi");
+  console.log(data);
+  quotes = data["quotes"];
+  var number = getRandomInt(102);
+  $("#daily-quote").text('Quote of the Day: "' + quotes[number]["quote"] + '" - ' + quotes[number]["author"]);
+  
+}
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
 // Function to sort Data

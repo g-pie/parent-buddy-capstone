@@ -7,8 +7,12 @@
   <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
   <title>Parent Buddy</title>
 </head>
-<body>
+<header>
+  <h1 style="text-align: left; margin: 0px; padding: 10px;color: cornsilk;">Parent Buddy</h1>
+    <div id="daily-quote">this is daily quote</div>
+  </header>
   
+<body>
   <div id="myDIV" class="header">
     <h2 style="margin:5px">Mom's To-Do List</h2>
     <input type="text" id="myInput" placeholder="Title...">
@@ -32,6 +36,7 @@
       <li> <a href="https://www.youtube.com/channel/UCG-KntY7aVnIGXYEBQvmBAQ" target="_blank">Thomas Frank's Youtube Channel (useful productivity content)</a></li>
     </ul>
   </div>
+  <script src="{{url_for('static', filename='quotes.js')}}"></script>
   <script src="{{url_for('static', filename='main.js')}}"></script>
 </body>
 </html>
