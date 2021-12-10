@@ -26,11 +26,11 @@
         </div>
         <p>  
           <!-- <div class='divRemberBtn'>  -->
+            {{ form.submit(width=1) }}
             {{ form.remember_me.label }} 
             {{ form.remember_me(class='loginbtn') }}
           <!-- </div>  -->
         </p>
-        <p>{{ form.submit(width=2) }}</p>
       </div>
     </form>
   </div>
