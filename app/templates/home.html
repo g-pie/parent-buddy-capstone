@@ -7,28 +7,20 @@
   <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}?version=#">
   <title>Parent Buddy</title>
 </head>
-<body>
-  
+<header>
+  <div class="overlay">
   <div id="myDIV" class="header">
-    <h2 style="margin:5px">Mom's To-Do List</h2>
-    <input type="text" id="myInput" placeholder="Title...">
-    <input type="number" id="myPriority" placeholder="Priority">
-    <span onclick="newElement()" class="addBtn">Add</span>
-  </div>
-  
-  <ul id="myUL">
-  </ul>
-  
-  <div id="tips">
-    <h2 style="margin:15px"> Stress relief resources:</h2>
-    <ul id="tips_ul">
-    </ul>
+    <h1 style="margin:5px">Schedule It All!</h1>
   </div>
   <script src="{{url_for('static', filename='main.js')}}"></script>
 
   <div id="login">
     <button onclick="location.href='{{url_for('login')}}'" type="button">
         Login Here!</button>
+    <div id="daily-quote1">this is daily quote</div>
+    <script src="{{url_for('static', filename='quotes.js')}}"></script>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
   </div>
-</body>
+    </div>
+</header>
 </html>
