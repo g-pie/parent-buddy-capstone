@@ -112,6 +112,32 @@ input {
   font-size: 16px;
 }
 
+
+.login {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 50%;
+  padding: 10px;
+  float: none;
+  font-size: 16px;
+}
+
+.loginbtn {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 5%;
+  padding: 10px;
+  float: none;
+  left:auto;
+  font-size: 16px;
+}
+
+.divRemberBtn{
+  text-align: left;
+}
+
 /* Style the "Add" button */
 .addBtn {
   padding: 10px;
