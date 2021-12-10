@@ -114,13 +114,24 @@ input {
 
 
 .login {
-  margin: 0;
   border: none;
   border-radius: 0;
   width: 50%;
   padding: 10px;
   float: none;
   font-size: 16px;
+    margin-top: 10px;
+}
+
+.login_right {
+  border: none;
+  border-radius: 0;
+    float: none;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+    margin-top: 10px;
+    left: 40%;
 }
 
 .loginbtn {
@@ -164,9 +175,11 @@ input {
 }
 
 #daily-quote{
-  font-family: cursive;
-  background-color: bisque;
-  text-align: center;
+      font-family: cursive;
+      /*background-color: bisque;*/
+    color: black;
+      text-align: center;
+      font-size: 20px;
 }
 
 header .overlay{
@@ -191,12 +204,13 @@ h3, p {
 }
 
 button {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    bottom: 25%;
     height:40px;
-    width:200px;
-    margin: -20px -50px;
-    position:fixed;
-    top:50%;
-    left:50%;
+    float: bottom;
 	padding: 10px 20px;
 	border-radius: 50px;
 	color: #333;
@@ -206,6 +220,6 @@ button {
 button:hover{
 	cursor: pointer;
 }
-.username {
-  float: left;
-}
+/*.username {*/
+/*  float: centre;*/
+/*}*/
