@@ -7,26 +7,35 @@
   <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}?version=#">
   <title>Parent Buddy</title>
 </head>
-<body>
-  
-  <div id="myDIV" class="header">
-    <h2 style="margin:5px">Mom's To-Do List</h2>
-    <h1>Sign In</h1>
+<header>
+    <div class="overlay">
+    <h1 style="margin:5px">Schedule It All!</h1>
+      <h3> Helping you make your life better </h3>
+    
+    <div style="margin-left:25%; margin-right: 25%;">
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
-        <p>
-            {{ form.username.label }}<br>
-            {{ form.username(size=32) }}
-        </p>
+        <div style="text-align: center;">
+        <div id="username">
+            <p>
+                {{ form.username.label }}<br>
+                {{ form.username(size=5,class='login') }}
+            </p>
+        </div>
         <p>
             {{ form.password.label }}<br>
-            {{ form.password(size=32) }}
+            {{ form.password(size=5,class='login') }} 
         </p>
-        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
-        <p>{{ form.submit() }}</p>
+        <p>  
+          <!-- <div class='divRemberBtn'>  -->
+            {{ form.remember_me.label }} 
+            {{ form.remember_me(class='loginbtn') }}
+          <!-- </div>  -->
+        </p>
+        <p>{{ form.submit(style='float:none;width:50%') }}</p>
+      </div>
     </form>
   </div>
-  <hr>
   {% with messages = get_flashed_messages() %}
   {% if messages %}
   <ul>
@@ -36,5 +45,6 @@
   </ul>
   {% endif %}
   {% endwith %}
-  
+    </div>
+</header>
 </html>

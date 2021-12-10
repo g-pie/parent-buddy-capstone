@@ -13,6 +13,7 @@ function importQuotes(){
   quotes = data["quotes"];
   var number = getRandomInt(102);
   $("#daily-quote").text('Quote of the Day: "' + quotes[number]["quote"] + '" - ' + quotes[number]["author"]);
+  $("#daily-quote1").text('Quote of the Day: "' + quotes[number]["quote"] + '" - ' + quotes[number]["author"]);
   
 }
 function getRandomInt(max) {
