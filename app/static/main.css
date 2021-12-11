@@ -114,7 +114,7 @@ input {
 
 
 .login {
-  border: none;
+    border: none;
   border-radius: 0;
   width: 50%;
   padding: 10px;
@@ -145,6 +145,16 @@ input {
   font-size: 16px;
 }
 
+#loginButton{
+  position: relative;
+  top: 70px;
+}
+
+#logoutButton{
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
 .divRemberBtn{
   text-align: left;
 }
@@ -210,13 +220,8 @@ h3, p {
 }
 
 button {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    bottom: 25%;
-    height:40px;
-    float: bottom;
+  margin: 0 auto;
+   height:40px;
 	padding: 10px 20px;
 	border-radius: 50px;
 	color: #333;
