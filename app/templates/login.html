@@ -18,21 +18,19 @@
         <div style="text-align: center;">
         <div id="username">
             <p>
-                {{ form.username.label }}<br>
-                {{ form.username(size=5,class='login') }}
+                {{ form.username.label }}
+                {{ form.username(size=5,class='login') }} <br>
+                {{ form.password.label }}
+                {{ form.password(size=5,class='login') }}
             </p>
         </div>
-        <p>
-            {{ form.password.label }}<br>
-            {{ form.password(size=5,class='login') }} 
-        </p>
         <p>  
           <!-- <div class='divRemberBtn'>  -->
+            {{ form.submit(width=1) }}
             {{ form.remember_me.label }} 
             {{ form.remember_me(class='loginbtn') }}
           <!-- </div>  -->
         </p>
-        <p>{{ form.submit(style='float:none;width:50%') }}</p>
       </div>
     </form>
   </div>

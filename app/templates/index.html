@@ -8,16 +8,24 @@
   <title>Parent Buddy</title>
 </head>
 <header>
-  <h1 style="text-align: left; margin: 0px; padding: 10px;color: cornsilk;">Parent Buddy</h1>
+
+  <div class="overlay">
+
+  <h1 style="text-align: center; margin: 0px; padding: 10px;color: Black;">Parent Buddy</h1>
     <div id="daily-quote">this is daily quote</div>
+
+    </div>
+
   </header>
+
   
 <body>
   <div id="myDIV" class="header">
-    <h2 style="margin:5px">Mom's To-Do List</h2>
+    <h2 style="margin:5px">Mom's To-Do List:</h2>
     <input type="text" id="myInput" placeholder="Title...">
     <input type="number" id="myPriority" placeholder="Priority">
-    <span onclick="newElement()" class="addBtn">Add</span>
+    <span onclick="newElement()" class="addBtn" style="justify-content:center">Add</span>
+    <br>
   </div>
   
   <ul id="myUL">
@@ -29,6 +37,11 @@
   <div id="calendar">
     <iframe src="https://calendar.google.com/calendar/embed?src=doe888133%40gmail.com&ctz=America%2FDetroit" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>  
   </div>
+
+  <br>
+  <br>
+=======
+
   <div id="tips">
     <h2 style="margin:15px"> Stress relief resources:</h2>
     <ul id="tips_ul">
@@ -43,7 +56,9 @@
 </body>
 
   <div id="login">
-    <button onclick="location.href='{{url_for('home')}}'" type="button">
-        Logout :(</button>
+    <br>
+    <br>
+    <button id="logoutButton" onclick="location.href='{{url_for('home')}}'" type="button">
+        Logout</button>
   </div>
 </html>
